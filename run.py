@@ -16,7 +16,6 @@ DATABASE_CREDS = config['Database']
 sales_df = pd.DataFrame()
 if os.path.exists(SALES_PATH):
     sales_df = pd.read_csv(SALES_PATH)
-    # print(sales_df)
     os.remove(SALES_PATH)
 
 
@@ -25,7 +24,7 @@ historical_d = {}
 
 for company in COMPANIES:
     historical_d[company] = yf.download(company, start=(datetime.today() - timedelta(days=1)).strftime('%Y-%m-%d'), end=datetime.today().strftime('%Y-%m-%d'))
-# print(historical_d)
+
 
 database = PGDatabase(
     host=DATABASE_CREDS['HOST'],
