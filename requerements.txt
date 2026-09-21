@@ -1,0 +1,15 @@
+appdirs==1.4.4
+certifi==2026.7.22
+gevent==26.9.0
+greenlet==3.5.6
+importlib_metadata==9.0.1
+pyee==11.1.1
+pyppeteer==2.0.0
+tqdm==4.70.1
+typing_extensions==4.16.0
+urllib3==1.26.20
+websocket==0.2.1
+websockets==10.4
+zipp==4.1.0
+zope.event==6.2
+zope.interface==8.6
